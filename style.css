@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: url('./asset/cursor.png'), auto;
+
+}
+
+#mainDisplay{  
+    background-image: url("./asset/background2.jpg");
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 70%;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+#mainGame{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+}
+.eleBub{
+    position: absolute;
+    height: 8vw;
+    width: 8vw;
+    animation: goUp 15s linear;
+}
+.imgBub{
+    position: absolute;
+    width: 8vw;
+}
+.textBub{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 50vh;
+    height: 8vw;
+    width: 8vw;
+    text-align: center;
+    line-height: 8vw;
+    font-size: 1vw;
+    font-weight: 1000;
+}
+@keyframes goUp{
+    0%{
+        top: 100vh;
+    }
+    100%{
+        top: 0vh;
+    }
+}
+#input{
+    position: absolute;
+    bottom: 0;
+    background-color: aqua;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 15vh;
+    border-radius: 10px;
+    display: none;
+}
+#inputBox{
+    margin: 10px;
+    text-align: center;
+    height: 5vh;
+    font-size: 3.5vh;
+}
+#result{
+    display: block;
+    background-color: grey;
+    margin: 0px 10px;
+    text-align: center;
+    color: wheat;
+    border-radius: 5px;
+    height: 5vh;
+    line-height: 5vh;
+}
+#ready{
+    position: absolute;
+    background-color: rgb(163, 28, 28);
+    height: 10vh;
+    width: 20vw;
+    left: 40vw;
+    top: 30vh;
+    line-height: 10vh;
+    text-align: center;
+    color: white;
+    font-size: 5vh;
+    border-radius: 5vh;
+    border-style: solid;
+    border-color: black;
+    z-index: 2;
+}
+#ready:hover{
+    z-index: 2;
+    background-color: rgb(223, 96, 96);
+}
+#score{
+    background-color: aqua;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    z-index: 2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    width: 20vh;
+    text-align: center;
+    font-weight: 1000;
+    margin: 5px;
+    display: none;
+}
+#best{
+    background-color: aqua;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    z-index: 2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    width: 20vh;
+    text-align: center;
+    font-weight: 1000;
+    margin: 5px;
+    display: none;
+}
+#gameOver{
+    z-index: 2;
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: none;
+    animation: fadeIn 1s linear;
+}
+
+@keyframes fade{
+    0%{
+        background-image: url("./asset/background2.jpg");
+    }
+    100%{
+        background-image: url("./asset/loser.jpg");
+    }
+}
+
+#replay{
+    background-color: rgb(81, 73, 197);
+    border-radius: 10vh;
+    border-style: dotted;
+    border-color: black;
+    z-index: 2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    width: 50vh;
+    text-align: center;
+    font-weight: 1000;
+    opacity: 100%;
+    top: 80vh;
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    height: 8vh;
+    line-height: 8vh;
+    display: none;
+}
+#replay:hover{
+    background-color: blueviolet;
+}
